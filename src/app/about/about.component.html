@@ -1,0 +1,122 @@
+<section class="about-section text-center text-white d-flex align-items-center justify-content-center">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1 class="mb-3">About Us</h1>
+    <div class="underline mx-auto mb-3"></div>
+    <p class="about-text" style="color: white;">"Connecting Talent. Creating Leaders. Transforming Futures."</p>
+  </div>
+</section>
+<br>
+
+
+<section class="container py-5">
+  <div class="row align-items-center">
+    <!-- Left Side Image -->
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img src="..\assets\slide\about.jpg" alt="About Us" class="about-img">
+    </div>
+
+    <!-- Right Side Content -->
+    <div class="col-md-6 about-content">
+      <h2>About Us</h2>
+<p>
+  Tyro HR India Pvt Ltd, established in January 2022, is a leading organization offering a diverse range of HR services, including awards and certifications for outstanding HR professionals, payroll management, staffing solutions, and corporate training. 
+  We specialize in recognizing HR excellence and building a strong HR community through events, workshops, and knowledge-sharing platforms. 
+  In addition to HR expertise, we deliver customized software development solutions that align with specific business goals and industry requirements.
+  <br><br>
+  Our services cover web and mobile applications, full stack development, cloud integration, and enterprise solutions. 
+  Tyro HR is also an ISO certified organization, ensuring the highest standards in all our operations.
+  We focus on talent development through comprehensive software development and corporate training programs.
+  These training programs are designed to equip individuals with in-demand skills, real-time project experience, and career guidance.
+  With a focus on quality, innovation, and impact, we empower both professionals and organizations to thrive in the digital era.
+</p>
+
+    </div>
+  </div>
+</section>
+
+<body class="container py-5" style="background-color: #ffffff;">
+
+  <!-- Vision Section -->
+  <div class="row align-items-center custom-section p-2">
+    <!-- Content -->
+    <div class="col-md-7 order-md-1 content">
+      <i class="fas fa-lightbulb text-warning fa-2x mb-3"></i>
+      <h2 class="h4 font-weight-bold">Our Vision</h2>
+      <p class="mt-3">
+        To revolutionize the HR and recruitment landscape by becoming the most trusted bridge between exceptional talent and leading organizations. Our vision is to cultivate a thriving HR community where innovation, integrity, and continuous growth empower businesses and individuals to achieve their full potential.
+      </p>
+    </div>
+    <!-- Image -->
+    <div class="col-md-5 order-md-2 ">
+      <img src="..\assets\common\1.png" alt="Vision Image" class="img-cover h-100 p-1 rounded-4">
+    </div>
+  </div>
+
+  <!-- Mission Section -->
+  <div class="row align-items-center custom-section flex-md-row">
+     <!-- Image -->
+     <div class="col-md-5 order-md-1">
+      <img src="..\assets\common\2.png" alt="Mission Image" class="img-cover h-100 rounded-4">
+    </div>
+    <!-- Content -->
+    <div class="col-md-7 order-md-2 content">
+      <i class="fas fa-bullseye text-warning fa-2x mb-3"></i>
+      <h2 class="h4 font-weight-bold">Our Mission</h2>
+      <p class="mt-3">
+        <strong>1.</strong> To connect exceptional talent with top-tier companies, fostering long-lasting partnerships that drive organizational success and career growth.<br><br>
+        <strong>2.</strong> To deliver innovative, efficient, and customized HR solutions that align with the unique needs of clients and candidates.<br><br>
+        <strong>3.</strong> To organize impactful HR events, leadership programs, and recognition awards, strengthening the HR community.<br><br>
+        <strong>4.</strong> To uphold integrity, professionalism, and continuous learning while adapting to the evolving business environment.<br><br>
+        <strong>5.</strong> To empower professionals and organizations nationwide, shaping a future where human potential is maximized.
+      </p>
+    </div>
+   
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+
+
+
+
+
+
+<div class="container py-5">
+  <h2 class="text-center mb-5 fw-bold">Our Leadership Team</h2>
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let leader of leaders">
+      <div class="card h-100 shadow-sm border-0 leader-card">
+        <img [src]="leader.image" alt="{{ leader.name }}" class="card-img-top img-fluid rounded-top" style="height: auto; object-fit: cover;">
+        <div class="card-body text-center">
+          <h4 class="card-title mb-2">{{ leader.name }}</h4>
+          <p class="text-muted mb-3">{{ leader.designation }}</p>
+          <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#leaderModal" (click)="openModal(leader)">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Leader Details Modal -->
+<div class="modal fade" id="leaderModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4 rounded-4 shadow">
+      <div class="modal-header border-0">
+        <h4 class="modal-title fw-semibold">{{ selectedLeader?.name }}</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img [src]="selectedLeader?.image" alt="{{ selectedLeader?.name }}" class="img-fluid mb-3 rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+        <p><strong>Designation:</strong> {{ selectedLeader?.designation }}</p>
+        <p style="text-align: justify;"><strong>About:</strong> {{ selectedLeader?.about }}</p>
+      </div>
+    </div>
+  </div>
+</div>

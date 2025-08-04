@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Training</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        cursor: pointer;
+        width: 100%;
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+        }
+        .hero-section {
+            background: url('https://images.pexels.com/photos/3184416/pexels-photo-3184416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .hero-section .btn {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+        .why-choose-us, .training-methods, .training-process {
+            padding: 60px 20px;
+
+        }
+        .why-choose-us i, .training-methods i {
+            font-size: 3rem;
+            color: #007bff;
+        }
+        .training-programs .card {
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .training-programs .card:hover {
+            transform: scale(1.05);
+        }
+        .process-steps {
+            display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        max-width: 100%; /* Ensures it doesn’t overflow */
+        }
+        .process-steps .step {
+         
+            padding: 15px 20px;
+        border-radius: 20px;
+        border: 1px solid darkkhaki;
+        font-weight: bold;
+        text-align: center;
+        width: auto; /* Prevents overflow issues */
+        white-space: nowrap; /* Ensures text doesn’t break awkwardly */
+        }
+        h5{
+            padding: 0.5em;
+        }
+        @media (max-width: 768px) {
+            .hero-section h1 {
+            font-size: 2rem;
+        }
+        .process-steps {
+            flex-direction: column;
+            align-items: center;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="corporate-training">
+        <section class="hero-section">
+            <div class="container">
+                <h1>Empower Your Workforce with Expert Training</h1>
+                <p>Upskill, Reskill, and Transform Your Team for Business Success</p>
+                <button class="btn btn-danger">Get a Free Consultation</button>
+            </div>
+        </section>
+<br>
+        <section class="why-choose-us text-center">
+            <div class="container">
+                <h2>Why Choose Our Corporate Training?</h2>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fas fa-user-tie"></i>
+                        <h4>Industry Experts</h4>
+                        <p>Learn from professionals with real-world experience.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-cogs"></i>
+                        <h4>Hands-On Workshops</h4>
+                        <p>Engage in practical learning with interactive sessions.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Certification Support</h4>
+                        <p>Recognized credentials & post-training mentorship.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="training-programs text-center">
+            <div class="container">
+                <h2>Our Corporate Training Programs</h2>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Technical Training" class="img-fluid">
+                            <h5>Technical & IT Training</h5>
+                            <button class="btn btn-dark">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://images.pexels.com/photos/4427431/pexels-photo-4427431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Soft Skills Training" class="img-fluid">
+                            <h5>Soft Skills & Leadership</h5>
+                            <button class="btn btn-dark">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://images.pexels.com/photos/327533/pexels-photo-327533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="HR Training" class="img-fluid">
+                            <h5>HR & Business Training</h5>
+                            <button class="btn btn-dark">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://images.pexels.com/photos/109919/pexels-photo-109919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sales Training" class="img-fluid">
+                            <h5>Sales & <br> Marketing</h5>
+                            <button class="btn btn-dark">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="training-methods text-center bg-light">
+            <div class="container">
+                <br>
+                <h2>Flexible Learning Options</h2>
+                <br>
+              
+                <div class="row" style="padding: 1em;">
+                    <div class="col-md-3">
+                        <i class="fas fa-laptop my-3"></i>
+                        <h4>Live Virtual Training</h4>
+                        <p>Instructor-led, real-time sessions.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fas fa-building my-3"></i>
+                        <h4>Onsite Training</h4>
+                        <p>Customized training at your workplace.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fas fa-book my-3"></i>
+                        <h4>Self-Paced Learning</h4>
+                        <p>Pre-recorded sessions with flexible access.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fas fa-globe my-3"></i>
+                        <h4>Hybrid Training</h4>
+                        <p>Combination of online & offline learning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="training-process text-center">
+            <div class="container">
+                <h2>Our Training Process</h2>
+
+<br>
+<br>                <div class="process-steps">
+                    <div class="step btn-outline-danger">📝 Analysis & Consultation</div>
+                    <div class="step btn-outline-danger">📅 Custom Training Plan</div>
+                    <div class="step btn-outline-danger">🎓 Hands-on Training</div>
+                    <div class="step btn-outline-danger">📊 Assessment & Feedback</div>
+                    <div class="step btn-outline-danger">🏆 Certification & Support</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

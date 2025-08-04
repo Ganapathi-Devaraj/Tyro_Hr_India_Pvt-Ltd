@@ -1,0 +1,58 @@
+<div class="container py-5">
+  <div class="row align-items-center g-4">
+    
+ 
+    <div class="col-lg-4 col-12 text-center">
+      <h2 class="text-center mb-4 fw-bold">Let's Connect</h2>
+      <img src="..\assets\services\corporate training.png" class="img-fluid" alt="Contact Us Image">
+    </div>
+    
+    <!-- Form Section -->
+    <div class="col-lg-8 col-12">
+      <form [formGroup]="hrForm" (ngSubmit)="onSubmit()" class="p-4 border rounded shadow">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Full Name:</label>
+            <input type="text" class="form-control" formControlName="fullName">
+            <div class="text-danger small" *ngIf="isSubmitted && hrForm.controls['fullName'].invalid">Name is required.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Email:</label>
+            <input type="email" class="form-control" formControlName="email">
+            <div class="text-danger small" *ngIf="isSubmitted && hrForm.controls['email'].invalid">Valid email is required.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Phone:</label>
+            <input type="text" class="form-control" formControlName="phone">
+            <div class="text-danger small" *ngIf="isSubmitted && hrForm.controls['phone'].invalid">Valid phone (10 digits) required.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Company:</label>
+            <input type="text" class="form-control" formControlName="company">
+            <div class="text-danger small" *ngIf="isSubmitted && hrForm.controls['company'].invalid">Company required.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Designation:</label>
+            <input type="text" class="form-control" formControlName="designation">
+            <div class="text-danger small" *ngIf="isSubmitted && hrForm.controls['designation'].invalid">Designation required.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Experience:</label>
+            <input type="text" class="form-control" formControlName="experience">
+            <div class="text-danger small" *ngIf="isSubmitted && hrForm.controls['experience'].invalid">Experience required.</div>
+          </div>
+
+          <div class="col-12 text-center mt-3">
+            <button type="submit" class="btn btn-primary px-4">Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+</div>

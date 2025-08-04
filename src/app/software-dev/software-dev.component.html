@@ -1,0 +1,120 @@
+<div class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Our Software Development Services</h2>
+      <p class="text-secondary">"Building Future-Ready Digital Solutions"</p>
+      <span class="text-primary">Innovate | Integrate | Accelerate</span>
+    </div>
+  
+    <div class="row g-4">
+      <div
+        class="col-md-4"
+        *ngFor="let service of services"
+        (click)="openService(service)"
+      >
+        <div class="card service-card shadow-sm">
+          <div class="img-overlay">
+            <img
+              [src]="service.image"
+              class="card-img-top"
+              alt="{{ service.title }}"
+            />
+            <div class="overlay-content d-flex flex-column align-items-center justify-content-center text-center">
+                <h5 class="text-white fw-bold">{{ service.title }}</h5>
+                <div class="text-white">{{ service.tagline }}</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Popup Modal -->
+    <div
+      class="modal fade"
+      id="serviceModal"
+      tabindex="-1"
+      aria-labelledby="serviceModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header text-white">
+            <h5 class="modal-title">{{ selectedService?.title }}</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                  <div
+                    class="carousel-item position-relative"
+                    *ngFor="let image of carouselImages; let i = index"
+                    [class.active]="i === 0"
+                  >
+                    <img [src]="image.src" class="d-block w-100" alt="carousel image" />
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                      <h5 class="bg-dark bg-opacity-20 p-2 rounded">{{ image.title }}</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+<br>
+            <div class="mb-5 text-justify">
+                <p>{{ selectedService?.introduction }}</p>
+              </div>  
+              
+              <!-- Why Choose Section -->
+          <div class="mb-5">
+            <h3>{{ selectedService?.whyChooseTitle }}</h3>
+            <ul class="list-group list-group-flush">
+              <li *ngFor="let point of selectedService?.whyChoosePoints" class="list-group-item">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>{{ point }}
+              </li>
+            </ul>
+          </div>
+
+  <!-- Why Choose Us -->
+  <div class="mb-5">
+    <h3>{{ selectedService?.whyChooseUsTitle }}</h3>
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let point of selectedService?.whyChooseUsPoints" class="list-group-item">
+        <i class="bi bi-star-fill text-info me-2"></i>{{ point }}
+      </li>
+    </ul>
+  </div>
+          </div>
+          
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <section id="technology-section" class="technology-section container py-5">
+    <h2 class="tech-title text-center mb-4">Technologies We Use</h2>
+    <p class="tech-subtitle text-center mb-5">We work with the latest technologies to build modern and scalable solutions.</p>
+  
+    <div class="row" *ngFor="let category of techCategories">
+      <h4 class="category-title mt-4 mb-3" [id]="category.id">{{ category.title }}</h4>
+      <div class="col-6 col-md-3 mb-4" *ngFor="let tech of category.technologies">
+        <div class="tech-card p-3 shadow-sm text-center rounded-4">
+          <i class="{{ tech.icon }} tech-icon mb-3" [style.color]="tech.color"></i>
+          <h6 class="tech-name">{{ tech.name }}</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  

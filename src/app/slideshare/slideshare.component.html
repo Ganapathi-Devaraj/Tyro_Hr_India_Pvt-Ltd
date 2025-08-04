@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated Gallery Slideshow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .carousel-item img {
+      object-fit: cover;
+      width: 100%;
+    }
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    /* Animation */
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideOut {
+      from {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      to {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+    }
+
+    .carousel-item.active.carousel-slide-in {
+      animation: slideIn 0.7s forwards;
+    }
+
+    .carousel-item.carousel-slide-out {
+      animation: slideOut 0.7s forwards;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Desktop Carousel -->
+<div class=" d-none d-md-block">
+  <div id="galleryCarouselDesk" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="../assets/slide/desk/1.jpg" class="d-block w-100" alt="Slide 1">
+   
+      </div>
+
+      <div class="carousel-item">
+        <img src="../assets/slide/desk/2.jpg" class="d-block w-100" alt="Slide 2">
+      
+      </div>
+
+      <div class="carousel-item">
+        <img src="../assets/slide/desk/3.jpg" class="d-block w-100" alt="Slide 3">
+      
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarouselDesk" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarouselDesk" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#galleryCarouselDesk" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#galleryCarouselDesk" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#galleryCarouselDesk" data-bs-slide-to="2"></button>
+    </div>
+
+  </div>
+</div>
+
+<!-- Mobile Carousel -->
+<div class=" d-block d-md-none">
+  <div id="galleryCarouselMob" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="../assets/slide/1.jpg" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+         
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="../assets/slide/2.jpg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+      
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="../assets/slide/3.jpg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+       
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarouselMob" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarouselMob" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#galleryCarouselMob" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#galleryCarouselMob" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#galleryCarouselMob" data-bs-slide-to="2"></button>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// Add animation classes dynamically
+function addSlideAnimation(carouselId) {
+  const carousel = document.querySelector(`#${carouselId}`);
+  carousel.addEventListener('slide.bs.carousel', function (e) {
+    const activeItem = carousel.querySelector('.carousel-item.active');
+    if (activeItem) {
+      activeItem.classList.remove('carousel-slide-in');
+      activeItem.classList.add('carousel-slide-out');
+    }
+    const nextItem = e.relatedTarget;
+    nextItem.classList.remove('carousel-slide-out');
+    nextItem.classList.add('carousel-slide-in');
+  });
+
+  carousel.addEventListener('slid.bs.carousel', function (e) {
+    const items = carousel.querySelectorAll('.carousel-item');
+    items.forEach(item => {
+      item.classList.remove('carousel-slide-out');
+    });
+  });
+}
+
+// Apply for both carousels
+addSlideAnimation('galleryCarouselDesk');
+addSlideAnimation('galleryCarouselMob');
+</script>
+
+</body>
+</html>

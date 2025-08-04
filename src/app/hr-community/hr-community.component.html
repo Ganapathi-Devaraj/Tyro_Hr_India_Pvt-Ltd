@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyro HR Community</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .shadow-hover:hover {
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      transform: scale(1.02);
+      transition: 0.3s;
+    }
+    .benefit-card:hover {
+      background-color: #f8f9fa;
+      transform: scale(1.03);
+      transition: 0.3s;
+    }
+    .testimonial-card:hover {
+      background-color: #fff;
+      transform: scale(1.03);
+      transition: 0.3s;
+    }
+    marquee {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .about-section {
+  position: relative;
+  height: 50vh;
+  background: url('https://i.pinimg.com/736x/8a/75/85/8a7585d74922007e2826bd168d851fec.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.about-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Reduced opacity */
+
+}
+
+.about-section .content {
+  position: relative;
+}
+
+.about-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.about-section .underline {
+  width: 100px;
+  height: 4px;
+  background-color: orange;
+  border-radius: 2px;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+}
+.about-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: justify;
+}
+p{
+  text-indent: 30px;
+  line-gap-override: 2px;
+}
+  </style>
+</head>
+<body>
+
+    <section class="about-section text-center text-white d-flex align-items-center justify-content-center">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1 class="mb-3">HR Comminity</h1>
+          <div class="underline mx-auto mb-3"></div>
+          <p class="about-text white">"Connecting Talent. Creating Leaders. Transforming Futures."</p>
+        </div>
+      </section>
+      <br>
+
+  <div class="container my-5">
+<br>
+    <!-- Hero Section -->
+    <div class="text-center p-5 bg-light shadow rounded mb-4">
+      <h2 class="mb-3">Join Our Thriving HR Community</h2>
+      <p class="lead">Connecting Exceptional HR Leaders & Professionals</p>
+      <p>Collaborate, Learn, Grow & Shape the Future of Human Resources.</p>
+      <a routerLink="/r-form" class="btn btn-primary shadow-sm mt-3">Join Now</a>
+    </div>
+<br>
+    <!-- About Section -->
+    <div class="bg-white p-4 rounded shadow mb-4 text-center">
+      <h3 class="mb-3">What is the Tyro HR Community?</h3>
+      <p>
+        Our HR Community is a dedicated platform designed to bring together forward-thinking HR professionals, talent leaders, recruiters, and business partners. We foster collaboration, innovation, and continuous learning through events, discussions, and networking opportunities.
+      </p>
+    </div>
+<br>
+    <!-- Key Benefits Section -->
+    <div class="row g-4 text-center mb-4">
+      <h4 class="mb-3">Why Join Our HR Community?</h4>
+      <div class="col-md-4">
+        <div class="p-4 bg-light rounded shadow benefit-card h-100">
+          <h5>🤝 Network with Top HR Experts</h5>
+          <p>Connect with top HR leaders across industries.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-light rounded shadow benefit-card h-100">
+          <h5>📚 Exclusive Industry Insights</h5>
+          <p>Access webinars, workshops & thought leadership.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-light rounded shadow benefit-card h-100">
+          <h5>🏆 Participate in HR Awards</h5>
+          <p>Get recognized for outstanding contributions.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    
+<br>
+    <!-- Testimonials -->
+    <div class="row g-4 text-center mb-4">
+      <h4 class="mb-3">What Our HR Leaders Say</h4>
+      <div class="col-md-4">
+        <div class="p-4 bg-light rounded shadow testimonial-card h-100">
+          <p>“Tyro HR India’s community has connected me with top talent leaders and kept me updated on trends.”</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-light rounded shadow testimonial-card h-100">
+          <p>“A fantastic platform to grow and network within the HR fraternity.”</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-light rounded shadow testimonial-card h-100">
+          <p>“The resources and events have been very impactful for my HR career.”</p>
+        </div>
+      </div>
+    </div>
+
+ 
+
+    <!-- Call-to-Action -->
+    <div class="text-center p-4 bg-primary text-white rounded shadow mb-4">
+      <h4>Ready to Transform Your HR Journey?</h4>
+      <a routerLink="/r-form" class="btn btn-light mt-3">Join the HR Community Today</a>
+    </div>
+
+    <!-- Marquee Announcement -->
+    <div class="bg-warning text-dark p-2 rounded shadow">
+      <marquee behavior="scroll" direction="left" scrollamount="6">
+        🚨 New HR Awards Nominations Open! Submit Your Entry Today.
+      </marquee>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

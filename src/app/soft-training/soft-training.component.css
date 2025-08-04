@@ -1,0 +1,144 @@
+*{
+  cursor: pointer;
+}
+.training-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .training-tagline {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .course-card {
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .course-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .overlay-img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+
+  .custom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.modal-content-box {
+  background: #ffffff;
+  border-radius: 12px;
+  width: 90%;
+  height: 80%;
+  overflow-y: scroll;
+  padding: 25px 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.modal-header h5 {
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+}
+
+.btn-close {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: #ff4d4f;
+  transition: transform 0.2s ease;
+}
+
+.btn-close:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.modal-body {
+  color: #444;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.syllabus label {
+  font-weight: 600;
+  color: #555;
+}
+
+.syllabus input {
+  border-radius: 8px;
+}
+
+.syllabus button {
+  border-radius: 8px;
+  padding: 8px 18px;
+}
+
+.syllabus .text-danger {
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.nav-pills .nav-link {
+  color: #333;
+  font-weight: 600;
+  border-radius: 25px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.tech-card {
+  background: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-card:hover {
+  transform: scale(1.05);
+}
+
+.tab-content {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}

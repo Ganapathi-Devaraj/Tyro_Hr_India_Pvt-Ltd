@@ -1,0 +1,80 @@
+<div class="top">
+    <nav class="navbar">
+      <div class="container nav-container">
+        <!-- Logo Section -->
+        <div class="logo-section">
+          <img src="../assets/common/logo.png" class="img-fluid logo" alt="Tyro logo" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/ISO_9001-2015.svg/2240px-ISO_9001-2015.svg.png" class="img-fluid iso" alt="ISO" />
+        </div>
+  
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a routerLink="/about">About Us</a></li>
+          <li class="dropdown">
+            <a routerLink="/services">Services ⬇️</a>
+            <div class="dropdown-content">
+              <a routerLink="/certificate">Certification/Award Program</a>
+              <a routerLink="/event">Event Management for HR Professionals</a>
+              <a routerLink="/payroll">PayRoll</a>
+              <a routerLink="/end-end">End to End Recruitment</a>
+              <a routerLink="/soft-dev">Software Development</a>
+              <a routerLink="/corp-training">Corporate Training</a>
+              <a routerLink="/hr-meet">HR Networking Meetups</a>
+              <a routerLink="/soft-training">Software Development Training</a>
+              <a routerLink="/Stewardship">Stewardship</a>
+              <a routerLink="/career-counselling">Career Counselling</a>
+              <a routerLink="/campus">Campus Recruitment</a>
+              <a  routerLink="/dm">Digital Marketing & Web Development</a>
+            </div>
+          </li>
+          <li><a routerLink="/hr-community">HR Community</a></li>
+          <li><a routerLink="/clients">Clients</a></li>
+          <li><a routerLink="/careers">Careers</a></li>
+          <li><a routerLink="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+
+
+<div class="mob">
+    <div class="unique-navbar" style="display: flex;justify-content: space-between;">
+        <button class="unique-menu-button" (click)="toggleMenu()">☰ Quick Access👍 </button>
+       <!-- <span style="color: white;font-weight: 600;font-size: 30px;text-align: center;">TYRO</span>    -->
+       <img src="../assets/common/logo.png" alt="logo" width="20%">
+    </div>
+
+    <div class="overlay" *ngIf="isMenuOpen">
+        <div class="menu-content">
+            <button class="close-button" (click)="closeMenu()">❌ Close</button>
+            <img src="../assets/common/logo.png" alt="logo" class="mx-3" width="50%">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/ISO_9001-2015.svg/2240px-ISO_9001-2015.svg.png" class="img-fluid iso mx-3" alt="ISO" />
+            <hr>
+            <a href="#" (click)="closeMenu()">Home</a>
+            <a routerLink="/about" (click)="closeMenu()">About Us</a>
+            <div class="dropdown">
+                <button class="dropbtn" routerLink="/services" (click)="toggleDropdown()">Services⬇️</button>
+                <div class="dropdown-content" *ngIf="isDropdownOpen">
+                    <a routerLink="/certificate" (click)="closeMenu()">Certification/Award Program</a>
+                    <a routerLink="/event" (click)="closeMenu()">Event Management for HR Professionals</a>
+                    <a routerLink="/soft-dev" (click)="closeMenu()">Software Development</a>
+                    <a routerLink="/soft-training" (click)="closeMenu()">Software Development Training</a>
+                    <a routerLink="/hr-meet" (click)="closeMenu()">HR Networking Meetups</a>
+                    <a routerLink="/corp-training" (click)="closeMenu()">Corporate Training</a>
+                    <a routerLink="/Stewardship"  (click)="closeMenu()">Stewardship</a>
+                    <a routerLink="/career-counselling"  (click)="closeMenu()">Career Counselling</a>
+                    <a routerLink="/campus"  (click)="closeMenu()">Campus Recruitment</a>
+                    <a  routerLink="/dm"  (click)="closeMenu()">Digital Marketing & Web Development</a>
+
+                </div>
+            </div>
+            <a routerLink="/hr-community" (click)="closeMenu()">HR Community</a>
+            <a routerLink="/clients" (click)="closeMenu()">Clients</a>
+            <a routerLink="/careers" (click)="closeMenu()">Careers</a>
+            <a routerLink="/contact" (click)="closeMenu()">Contact Us</a>
+            <button routerLink="/r-form" (click)="closeMenu()" class="btn btn-outline-primary">Let's Connect</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tyro HR Services</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    .service-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .service-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .service-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      padding: 15px;
+      text-align: center;
+    }
+    .service-card:hover img {
+      transform: scale(1.1);
+    }
+    .service-card .service-overlay {
+      opacity: 1;
+    }
+    .service-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="about-section text-center text-white d-flex align-items-center justify-content-center">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="mb-3">OUR SERVICES</h1>
+      <div class="underline mx-auto mb-3"></div>
+      <p class="about-text white">Empowering HR & Technology – Innovate, Connect, and Elevate!</p>
+    </div>
+  </section>
+
+
+
+
+
+<div class="container py-5">
+  <div class="row g-4">
+
+    <!-- Service 1 -->
+    <div class="col-md-4 col-sm-6" routerLink="/certificate">
+      <div class="service-card">
+        <img src="..\assets\services\certificate.jpg" alt="Certification Program">
+        <div class="service-overlay">
+          <div class="service-title">Certification Program</div>
+          <p>Recognized certificates for top HR professionals & teams.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="col-md-4 col-sm-6" routerLink="/event">
+      <div class="service-card">
+        <img src="..\assets\services\event.jpeg" alt="Event Management">
+        <div class="service-overlay">
+          <div class="service-title">Event Management</div>
+          <p>Professional HR events, summits & award ceremonies.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6" routerLink="/soft-dev">
+      <div class="service-card">
+        <img src="https://i.pinimg.com/736x/a6/83/15/a68315f072dd25f4c2d3410bf486b6f2.jpg" alt="Software development">
+        <div class="service-overlay">
+          <div class="service-title">Software Development</div>
+          <p>Innovate, Code, Elevate – Transforming Ideas into Digital Solutions!</p>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Service 3 -->
+     <div class="col-md-4 col-sm-6" routerLink="/soft-training">
+      <div class="service-card">
+        <img src="https://i.pinimg.com/736x/91/cb/19/91cb198013779a1c0d879efefde2a58b.jpg" alt="Software Development Training">
+        <div class="service-overlay">
+          <div class="service-title">Software Development Training</div>
+          <p>Empower Your Future with Cutting-Edge Software Development Skills!</p>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Service 4 -->
+     <div class="col-md-4 col-sm-6" routerLink="/end-end">
+      <div class="service-card">
+        <img src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="HR Networking">
+        <div class="service-overlay">
+          <div class="service-title">End to End Recruitment</div>
+          <p>From Talent Search to Final Selection — We Cover It All.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Service 4 -->
+    <div class="col-md-4 col-sm-6" routerLink="/hr-meet">
+      <div class="service-card">
+        <img src="..\assets\services\meeting.png" alt="HR Networking">
+        <div class="service-overlay">
+          <div class="service-title">HR Networking Meetups</div>
+          <p>Connect and collaborate with top HR leaders & professionals.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 5 -->
+    <div class="col-md-4 col-sm-6" routerLink="/corp-training">
+      <div class="service-card">
+        <img src="..\assets\services\corporate training.png" alt="Corporate Training">
+        <div class="service-overlay">
+          <div class="service-title">Corporate Training</div>
+          <p>Customized training programs to boost HR skills & leadership.</p>
+        </div>
+      </div>
+    </div>
+
+     <!-- Service 5 -->
+     <div class="col-md-4 col-sm-6" routerLink="/payroll">
+      <div class="service-card">
+        <img src="https://images.pexels.com/photos/7111556/pexels-photo-7111556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Corporate Training">
+        <div class="service-overlay">
+          <div class="service-title">PayRoll</div>
+          <p>Simplify Payroll, Amplify Growth!</p>
+        </div>
+      </div>
+    </div>
+
+<!-- Service 5 -->
+    <div class="col-md-4 col-sm-6" routerLink="/Stewardship">
+      <div class="service-card">
+        <img src="https://i.pinimg.com/736x/9c/7a/3a/9c7a3a5a0b27ce38ef9f99260836aa28.jpg" alt="Corporate Training">
+        <div class="service-overlay">
+          <div class="service-title">Stewardship</div>
+          <p>Excellence in Management, Integrity in Stewardship</p>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Service 5 -->
+     <div class="col-md-4 col-sm-6" routerLink="/career-counselling">
+      <div class="service-card">
+        <img src="https://i.pinimg.com/736x/59/8a/e2/598ae2109ee3f7de3a46074a5abe3437.jpg" alt="Corporate Training">
+        <div class="service-overlay">
+          <div class="service-title">Career Counselling</div>
+          <p>Guiding You From Dreams to Reality.</p>
+        </div>
+      </div>
+    </div>
+
+     <!-- Service 5 -->
+     <div class="col-md-4 col-sm-6" routerLink="/campus">
+      <div class="service-card">
+        <img src="https://i.pinimg.com/736x/e5/b6/77/e5b677db9e268b701c6dffb3056d8177.jpg" alt="Corporate Training">
+        <div class="service-overlay">
+          <div class="service-title">Campus Recruitment</div>
+          <p>Bridging Talent and Opportunity</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 5 -->
+    <div class="col-md-4 col-sm-6" routerLink="/dm">
+      <div class="service-card">
+        <img src="https://i.pinimg.com/736x/b5/03/09/b50309a02f54651f7262e56e66a7926f.jpg" alt="Corporate Training">
+        <div class="service-overlay">
+          <div class="service-title">Digital Marketing & Web Development</div>
+          <p>Smart Designs. Smarter Campaigns.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Process | Tyro HR India Pvt Ltd</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+        .hero {
+            position: relative;
+            background-image: url('https://images.pexels.com/photos/8962519/pexels-photo-8962519.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        .hero h1, .hero p, .hero button {
+            position: relative;
+            z-index: 1;
+        }
+        .btn-custom { background-color: #ffffff; color: #d17409; border: 2px solid #ffffff; padding: 10px 20px; font-weight: bold; }
+        .btn-custom:hover { background-color: #e0ae0a; color: white; }
+        .section-title { text-align: center; margin-bottom: 40px; color: #f38319; font-weight: bold; }
+        .feature-box { text-align: center; padding: 30px; border-radius: 10px; background: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: 0.3s; height: 100%; }
+        .feature-box:hover { transform: scale(1.05); }
+        .cta-section { background: #5a32a3; color: white; padding: 60px 20px; text-align: center; border-top-left-radius: 50px; border-top-right-radius: 50px; }
+        .payroll-steps ul { list-style-type: none; padding-left: 0; }
+        .payroll-steps li { padding: 15px; background: white; border-left: 5px solid #5a32a3; margin-bottom: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); font-size: 16px; }
+        .icon { font-size: 40px; color: #f38319; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Effortless Payroll Processing with Tyro HR</h1>
+        <p>Streamline your payroll operations with precision, compliance, and automation.</p>
+        <button class="btn btn-custom btn-lg" data-bs-toggle="modal" data-bs-target="#demoModal" > Request a Free Demo</button>
+    </section>
+    
+    <!-- Why Choose Us -->
+    <section class="container mt-5">
+        <h2 class="section-title">Why Choose Tyro HR Payroll?</h2>
+        <div class="row text-center">
+            <br>
+            <div class="col-md-4 my-2">
+                <div class="feature-box">
+                    <i class="fas fa-cogs icon"></i>
+                    <h4>Automated & Error-Free</h4>
+                    <p>Eliminate manual effort and enhance accuracy with intelligent payroll automation.</p>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-4 my-2">
+                <div class="feature-box">
+                    <i class="fas fa-balance-scale icon"></i>
+                    <h4>100% Compliance Assurance</h4>
+                    <p>Stay ahead of tax regulations, labor laws, and statutory deductions effortlessly.</p>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-4 my-2">
+                <div class="feature-box">
+                    <i class="fas fa-lock icon"></i>
+                    <h4>Secure & Confidential</h4>
+                    <p>Robust data encryption and role-based access ensure payroll security.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+    
+    <!-- Payroll Process -->
+    <section class="container mt-5">
+        <h2 class="section-title">Our Seamless Payroll Process</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 payroll-steps">
+                <ul>
+                    <li><strong>Step 1:</strong> Collect & validate employee attendance and salary structure.</li>
+                    <li><strong>Step 2:</strong> Automated salary computation with deductions & benefits.</li>
+                    <li><strong>Step 3:</strong> Ensure compliance with tax, PF, ESI, and statutory laws.</li>
+                    <li><strong>Step 4:</strong> Secure salary disbursement via direct bank transfer.</li>
+                    <li><strong>Step 5:</strong> Generate detailed payslips & payroll reports with one click.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="https://images.pexels.com/photos/8962519/pexels-photo-8962519.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="img-fluid rounded shadow" alt="Payroll Process">
+            </div>
+        </div>
+    </section>
+    
+<br>
+<br>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Empower Your Business with Tyro HR Payroll</h2>
+        <p>Experience seamless payroll solutions that ensure efficiency, compliance, and business growth.</p>
+        <button class="btn btn-custom btn-lg">Contact Us</button>
+    </section>
+    
+  <!-- Modal -->
+  <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="demoModalLabel">Payroll Process Consultation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <br>
+      
+            <div class="modal-body text-center">
+                <img src="https://images.pexels.com/photos/8962519/pexels-photo-8962519.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="img-fluid rounded shadow mb-3" alt="Payroll Process">
+                <br>  <br><h4>Consult with Our Payroll Experts</h4>
+                <br><p> Email: {{email}} </p>
+                <br><h4 style="color: purple;">"Simplifying Payroll, Empowering Businesses."</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

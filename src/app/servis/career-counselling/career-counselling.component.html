@@ -1,0 +1,142 @@
+<!-- Include Bootstrap CSS & Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  h1, h2, h5, h6 {
+    font-weight: 600;
+  }
+
+  a.btn-primary:hover,
+  a.btn-light:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+  }
+
+  img.hero-img {
+    max-height: 420px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  img.hero-img:hover {
+    transform: scale(1.02);
+  }
+
+  section {
+    scroll-margin-top: 80px;
+  }
+</style>
+
+<!-- Hero Section -->
+<section class="py-5 bg-light text-dark">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h1 class="display-5 fw-bold mb-3">Empower Your Future with Expert Career Guidance</h1>
+        <p class="lead text-muted mb-4">We help you uncover your true potential and align it with the right career choices using personalized counselling, psychological assessments, and expert advice.</p>
+   
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="https://i.pinimg.com/736x/90/30/b2/9030b2c9a9068af4d6f76ef2e304bc83.jpg" class="img-fluid rounded shadow hero-img" alt="Career Counselling">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Why Choose Our Career Counselling Services?</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <i class="bi bi-person-check display-4 text-primary mb-3"></i>
+        <h5 class="mb-2">Certified Career Experts</h5>
+        <p>Our counsellors are trained professionals with years of experience in career development and psychology.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <i class="bi bi-clipboard-data display-4 text-success mb-3"></i>
+        <h5 class="mb-2">Data-Driven Assessments</h5>
+        <p>We use scientifically validated tools to assess your interests, aptitude, and personality.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <i class="bi bi-lightbulb display-4 text-warning mb-3"></i>
+        <h5 class="mb-2">Customized Career Plans</h5>
+        <p>Receive tailored career roadmaps, academic guidance, and actionable steps to reach your goals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Assessment Process Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">How Our Counselling Works</h2>
+    <div class="row g-4">
+      <div class="col-md-3 text-center">
+        <div class="p-4 border rounded shadow-sm bg-white h-100">
+          <i class="bi bi-file-earmark-text fs-1 text-primary mb-2"></i>
+          <h6 class="fw-bold mb-2">Step 1</h6>
+          <p class="mb-0">Fill a quick interest & personality form.</p>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="p-4 border rounded shadow-sm bg-white h-100">
+          <i class="bi bi-search fs-1 text-success mb-2"></i>
+          <h6 class="fw-bold mb-2">Step 2</h6>
+          <p class="mb-0">Take our career aptitude assessment.</p>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="p-4 border rounded shadow-sm bg-white h-100">
+          <i class="bi bi-person-lines-fill fs-1 text-warning mb-2"></i>
+          <h6 class="fw-bold mb-2">Step 3</h6>
+          <p class="mb-0">Get one-on-one counselling from experts.</p>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="p-4 border rounded shadow-sm bg-white h-100">
+          <i class="bi bi-journal-check fs-1 text-danger mb-2"></i>
+          <h6 class="fw-bold mb-2">Step 4</h6>
+          <p class="mb-0">Receive your career plan & follow-up support.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Book a Session Section -->
+<section id="booking" class="py-5 bg-primary text-white text-center">
+  <div class="container">
+    <h2 class="mb-3">Ready to Transform Your Career?</h2>
+    <p class="mb-4">Book your personalized counselling session today and take the first step toward a fulfilling career.</p>
+    <a href="#" class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">Book Now</a>
+  </div>
+</section>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="contactModalLabel">Contact for Booking</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center p-4">
+        <p class="mb-3">Please contact us at the email below to book your career counselling session:</p>
+        <h5 class="fw-bold text-primary"><a href="mailto:info@tyroindia.in">{{email}}</a></h5>
+        <p class="mt-3 small text-muted">We'll get back to you within 24 hours.</p>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS (Required for modal functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

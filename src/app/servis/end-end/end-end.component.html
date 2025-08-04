@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>End-to-End Recruitment | Tyro HR India Pvt Ltd</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load') no-repeat center center/cover;
+      padding: 120px 20px;
+      color: white;
+      text-align: center;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .btn-custom {
+      background-color: #f38319;
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 12px 25px;
+      border-radius: 30px;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #5a32a3;
+      color: white;
+    }
+    .section-title {
+      color: #5a32a3;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .feature-box {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 25px;
+      margin-bottom: 25px;
+      transition: 0.3s ease-in-out;
+    }
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+    .feature-icon {
+      font-size: 40px;
+      color: #f38319;
+      margin-bottom: 15px;
+    }
+    .feature-content h4 {
+      color: #1d1a60;
+      font-weight: bold;
+    }
+    .why-choose .feature-icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+    .cta-section {
+      background-color: #5a32a3;
+      color: white;
+      padding: 60px 20px;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>End-to-End Recruitment Solutions</h1>
+      <p>Smart Hiring. Total Coverage. Tyro Trusted.</p>
+      <button class="btn btn-custom btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+    </div>
+  </section>
+
+  <!-- Recruitment Process -->
+  <section class="container py-5">
+    <h2 class="text-center section-title">Our Recruitment Process</h2>
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Recruitment" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6">
+        <div class="feature-box">
+          <i class="fas fa-search feature-icon"></i>
+          <div class="feature-content">
+            <h4>Talent Sourcing</h4>
+            <p>Identifying and attracting candidates via portals, social platforms & events.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-user-check feature-icon"></i>
+          <div class="feature-content">
+            <h4>Screening & Assessment</h4>
+            <p>Evaluating profiles through skill tests, behavioral checks & resume review.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-handshake feature-icon"></i>
+          <div class="feature-content">
+            <h4>Interview & Selection</h4>
+            <p>Technical + HR rounds to match right-fit talent for your organization.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-user-plus feature-icon"></i>
+          <div class="feature-content">
+            <h4>Onboarding & Training</h4>
+            <p>Helping candidates integrate with smooth onboarding and orientation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="container py-5 why-choose">
+    <h2 class="text-center section-title">Why Choose Tyro HR?</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <i class="fas fa-users feature-icon"></i>
+        <h4>Industry Experts</h4>
+        <p>We bring years of recruitment experience in multiple domains.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-clock feature-icon"></i>
+        <h4>Fast Hiring</h4>
+        <p>We reduce your time-to-hire with efficient end-to-end workflows.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-chart-line feature-icon"></i>
+        <h4>Proven Track Record</h4>
+        <p>Thousands of successful placements in top firms across India.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section text-center">
+    <div class="container">
+      <h2>Build Your Dream Team with Tyro HR</h2>
+      <p class="lead">Let our experts source, screen, and onboard the best talent for your success.</p>
+      <button class="btn btn-custom btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+ <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #5a32a3; color: white;">
+          <h5 class="modal-title" id="contactModalLabel">Contact Us - Tyro HR India Pvt Ltd</h5>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <h6><i class="fas fa-envelope me-2 text-primary"></i>Email:</h6>
+                <p>{{email}}</p>
+               
+                <h6><i class="fas fa-map-marker-alt me-2 text-danger"></i>Address:</h6>
+                <p>17/34, Five Furlong Rd, Maduvinkarai, Guindy, Chennai, Tamil Nadu 600032</p>
+              </div>
+              <div class="col-md-6">
+                <h6><i class="fas fa-clock me-2 text-warning"></i>Working Hours:</h6>
+                <p>Mon - Fri: 9:00 AM to 6:00 PM<br>Sat: 10:00 AM to 2:00 PM</p>
+                <h6><i class="fas fa-globe me-2 text-info"></i>Website:</h6>
+                <p><a href="https://www.tyrohr.in" target="_blank">www.tyrohr.in</a></p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="mailto:info@tyroindia.in" class="btn btn-primary">Send Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
