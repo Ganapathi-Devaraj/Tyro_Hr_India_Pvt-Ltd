@@ -1,0 +1,42 @@
+<div class="container mt-5">
+  <div class="card shadow-lg border-0 p-4">
+    <h2 class="text-center mb-4 fw-bold text-primary">Certifications</h2>
+
+    <p class="text-muted" style="font-size: 16px; line-height: 1.6;">
+      We provide industry-focused Java training that helps learners build strong programming fundamentals, including hands-on practice, real-time project work, and guidance from experienced trainers. Upon completion, participants receive a recognized certification that boosts their career prospects, showcasing their skills and enhancing opportunities in the IT industry.
+    </p>
+
+    <!-- Collapse Button -->
+    <div class="text-start mb-3">
+      <button class="btn btn-outline-primary fw-semibold" type="button" data-bs-toggle="collapse"
+        data-bs-target="#certificateTable" aria-expanded="false" aria-controls="certificateTable">
+        Show / Hide Certificate List
+      </button>
+    </div>
+
+    <!-- Collapsible Table -->
+    <div class="collapse show" id="certificateTable">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="table-primary">
+            <tr>
+              <th>S.No</th>
+              <th>Student Name</th>
+              <th>Department</th>
+              <th>Certificate No</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let c of certificateData">
+              <td>{{ c.sno }}</td>
+              <td>{{ c.name }}</td>
+              <td>{{ c.dept }}</td>
+              <td>{{ c.certificate }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

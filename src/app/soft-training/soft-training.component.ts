@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './soft-training.component.html',
   styleUrls: ['./soft-training.component.css']
 })
+
+
 export class SoftTrainingComponent {
 
   courses = [

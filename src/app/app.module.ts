@@ -33,6 +33,7 @@ import { StewardshipComponent } from './servis/stewardship/stewardship.component
 import { ClientsComponent } from './clients/clients.component';
 import { CareerCounsellingComponent } from './servis/career-counselling/career-counselling.component';
 import { DigitalMarketingComponent } from './servis/digital-marketing/digital-marketing.component';
+import { CertificateComponent } from './servis/certificate/certificate.component';
 
 
 @NgModule({
@@ -66,6 +67,7 @@ import { DigitalMarketingComponent } from './servis/digital-marketing/digital-ma
     ClientsComponent,
     CareerCounsellingComponent,
     DigitalMarketingComponent,
+    CertificateComponent,
   ],
   imports: [
     BrowserModule,
